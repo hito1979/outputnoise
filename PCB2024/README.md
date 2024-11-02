@@ -38,7 +38,7 @@
 ## FigS3　  
 1_de.c : Differential evolution of analytical CV  
 
-# To compile the C code including Mersenne Twister random Method　
+# compile the code with Mersenne Twister
 ```
-Gcc-14 -fopenmp -Ofast -msse2 -DSFMT_MEXP=19937 SFMT.c “Main Source File” func.c -lm
+gcc-14 -fopenmp -Ofast -msse2 -DSFMT_MEXP=19937 SFMT.c “Main Source File” func.c -lm
 ```
