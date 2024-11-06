@@ -41,9 +41,9 @@ de.c : Differential evolution of analytical CV
 gcc-14 -DSFMT_MEXP=19937 SFMT.c “Main Source File” func.c -lm
 ```
 
-Add to enable parallel computation,
+Add the following to enable parallel computation.
 ```
 -fopenmp
 ```
 
-Visit the [official website](http://www.math.sci.hiroshima-u.ac.jp/m-mat/MT/SFMT/index.html), if you need more information about the Mersenne Twister.
+Visit the [official website](http://www.math.sci.hiroshima-u.ac.jp/m-mat/MT/SFMT/index.html) if you need more information about the Mersenne Twister.
