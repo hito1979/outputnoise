@@ -5,7 +5,7 @@
 #include <string.h>
 #include <limits.h>
 #include <omp.h>
-#include "SFMT-neon.h" //Mersenne Twister
+#include "SFMT.h" //Mersenne Twister
 #include "func.h"  // Include the header for function declarations
 #define MAX_LINE_SIZE 1024
 
@@ -305,6 +305,21 @@ void measure_period(int ids_peak[], int size, int sample_period, double dt, doub
         if (count >= sample_period) {
             //printf("count_getout=%d\n", count);
             break;
+        }
+    }
+}
+
+void normalise_vector(double *x, int dim) {
+    double length = 0.0;
+
+    for (int i = 0; i < dim; i++) {
+        length += x[i] * x[i];
+    }
+
+    if (length > 0.0) {
+        length = sqrt(length);
+        for (int i = 0; i < dim; i++) {
+            x[i] /= length;
         }
     }
 }

@@ -18,6 +18,7 @@ void CV(double a, double b, double *A, double *B, double k, int step, double W, 
 double gauss(double uniform1, double uniform2);
 double f(double theta, double *A, double *B, int N);
 void measure_period(int ids_peak[], int size, int sample_period, double dt, double *period, int distance);
+void normalise_vector(double *x, int dim);
 void writedata_2d(char *file, char **header, double **data, int rows, int columns);
 void readdata(const char *file, double *dataArray);
 

@@ -42,15 +42,6 @@ int main() {
     step = (int)(1400/dt);
 
     //header
-    char *header[] = {"a", "CV_x"};
-
-    double **list_CV = (double**)malloc(sizeof(double*) * (num_sample));
-    for (int i = 0; i < num_sample; ++i) {
-        list_CV[i] = (double*)malloc(sizeof(double) * (2));
-    }
-
-
-    //header
     header = (char **)malloc((2 * N + 1) * sizeof(char *));
     for (int i = 0; i < 2 * N + 1; i++) {
         header[i] = (char *)malloc(20 * sizeof(char));

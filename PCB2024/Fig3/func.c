@@ -5,7 +5,7 @@
 #include <string.h>
 #include <limits.h>
 #include <omp.h>
-#include "SFMT-neon.h" //Mersenne Twister
+#include "SFMT.h" //Mersenne Twister
 #include "func.h"  // Include the header for function declarations
 #define MAX_LINE_SIZE 1024
 

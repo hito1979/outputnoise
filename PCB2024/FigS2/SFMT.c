@@ -23,7 +23,7 @@ extern "C" {
 
 #include <string.h>
 #include <assert.h>
-#include "SFMT-neon.h"
+#include "SFMT.h"
 #include "SFMT-params.h"
 #include "SFMT-common.h"
 

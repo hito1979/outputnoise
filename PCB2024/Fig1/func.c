@@ -352,6 +352,7 @@ void CV(double a, double b, double scale, double shift, int num_pow,  double T, 
         
         mean_w /= sample_period;
         mean_x /= sample_period;
+
         for (i = 0; i < sample_period; i++) {
             std_w += pow(period_w[i] - mean_w, 2);
             std_x += pow(period_x[i] - mean_x, 2);

@@ -17,7 +17,7 @@ int main() {
     char base_path[200] = ".."; //the path of folder where it is
     double T = 39.7;
     double epsilon = 0.1; //epsilon
-    double D = 3.0;
+    double D = 1e-6;
     double a; //alpha
     double b = 1.0; //beta
     double scale = 1.0; //amplitude of g(w)

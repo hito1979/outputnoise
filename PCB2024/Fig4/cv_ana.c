@@ -47,7 +47,7 @@ int main() {
     char *header[] = {"k", "CV_x"};
 
     char file[200];
-    sprintf(file, "%s/fig3b_red_round.csv", base_path); //set your path
+    sprintf(file, "parameter_blue.csv"); //set your path
     readdata(file, X);
 
     double A[N], B[N];

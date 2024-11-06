@@ -4,7 +4,7 @@
 #include <math.h>
 #include <time.h>
 #include <string.h>
-#include "SFMT-neon.h" //Mersenne Twister
+#include "SFMT.h" //Mersenne Twister
 #include "func.h"  // Include the header for function declarations
 
 // functions.h

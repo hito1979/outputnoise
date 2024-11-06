@@ -33,8 +33,8 @@ int main() {
     int num_peak = 1200; //number of peaks
     int sample_period = 1000; //number of periods
     int step; //how many steps for euler method
-    double CV_u; //CV of u
-    double CV_x; //CV of x
+    double cv_u; //CV of u
+    double cv_x; //CV of x
     char file_sample[200];
 
     distance = (int)(0.8/dt);
@@ -64,18 +64,18 @@ int main() {
 
         base_seed = 100*i;
 
-        CV_u = 0.0;
-        CV_x = 0.0;
+        cv_u = 0.0;
+        cv_x = 0.0;
 
         b = 1.0 + i * delta;
 
-        CV_u(a, b, scale, shift, num_pow, T, k_u, k_v, k_w, k_x, step, dt, epsilon, D, num_peak, start_time, distance, sample_period, repetition, base_seed, &CV_u, &CV_x);
+        CV_u(a, b, scale, shift, num_pow, T, k_u, k_v, k_w, k_x, step, dt, epsilon, D, num_peak, start_time, distance, sample_period, repetition, base_seed, &cv_u, &cv_x);
 
-        printf("index=%d, CV_u=%.6lf, CV_x=%.6lf\n", i, CV_u, CV_x);
+        printf("index=%d, CV_u=%.6lf, CV_x=%.6lf\n", i, cv_u, cv_x);
 
         list_CV[i][0] = b;
-        list_CV[i][1] = CV_u;
-        list_CV[i][2] = CV_x;
+        list_CV[i][1] = cv_u;
+        list_CV[i][2] = cv_x;
     }
 
     //save data

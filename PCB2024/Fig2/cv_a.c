@@ -46,7 +46,7 @@ int main() {
 
     char file[200];
     double normalise_paramter[2*N];
-    sprintf(file, "%s/fig2b_blue_round.csv", base_path); //set your path for CSV file of red or blue waveform
+    sprintf(file, "parameter_blue.csv"); //set your path for CSV file of red or blue waveform
     readdata(file, X);
 
     double A[N], B[N];

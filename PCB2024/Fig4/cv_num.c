@@ -57,7 +57,7 @@ int main() {
     double list_CV[repetition];
 
     char file[200];
-    sprintf(file, "%s/fig3b_red_round.csv", base_path);
+    sprintf(file, "parameter_blue.csv"); //set your path
     readdata(file, X);
 
     //##################################################################################
