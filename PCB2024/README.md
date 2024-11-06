@@ -36,15 +36,14 @@ de.c : Differential evolution of numerical CV
 # FigS3　  
 de.c : Differential evolution of analytical CV  
 
-# compile the code with Mersenne Twister
+# Compile the code with Mersenne Twister
 ```
 gcc-14 -DSFMT_MEXP=19937 SFMT.c “Main Source File” func.c -lm
 ```
 
-To enable parallel computation, add
+Add to enable parallel computation,
 ```
 -fopenmp
 ```
 
-If you need more information about the Mersenne Twister, visit the [official website](http://www.math.sci.hiroshima-u.ac.jp/m-mat/MT/SFMT/index.html)
-.
+Visit the [official website](http://www.math.sci.hiroshima-u.ac.jp/m-mat/MT/SFMT/index.html), if you need more information about the Mersenne Twister.
