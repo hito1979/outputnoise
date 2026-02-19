@@ -8,4 +8,5 @@ Enhanced precision of circadian rhythm by output system
 **Scientific Reports 2025**  
 Kaji H, Mori F, Maruyama O, Ito H
 Sinusoidal regulation reduces circadian period variability
+
 [Scientific Reports 15, 33843 (2025)](https://www.nature.com/articles/s41598-025-04614-z)
