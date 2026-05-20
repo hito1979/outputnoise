@@ -1,37 +1,40 @@
-# Fig1  
-cv\_a.c : Calculation with different values of a.  
-cv\_b.c : Calculation with different values of b.  
-cv\_k.c : Calculation with different values of k. 
+# Fig 1  
+CV goodwin.py      : CV Calculation with different values of d.  
+signal goodwin.py  : code to obsereve oscillation and peaks detection.  
 
-# Fig2　  
-cv\_a.c : Calculation with different values of a  
-cv\_b.c : Calculation with different values of b  
-cv\_f.c : Calculation with different values of f
-cv\_k.c : Calculation with different values of k
 
-# Fig3　  
-gibbs.c : Gibbs sampling with numerical CV  
+# Fig 2　  
+CV fitzhugh-nagumo.py   : CV Calculation of fitzhugh-nagumo model  
+CV goodwin.py           : CV Calculation of goodwin model
+CV phasemodel.py        : CV Calculation of phase model
 
-# Fig4　  
-cv\_ana.c : Calculation of CV with analytical formula  
-cv\_num.c : Numerical calculation of CV with checkpoints
 
-# Fig5　 
-gibbs.c : Gibbs sampling with analytical formula  
+# Fig 3　  
+fitzhugh-nagumo heatmap.py  : distribution of case optimization after contol the parameter in     fitzhugh-nagumo model
+goodwin heatmap.py          : distribution of case optimization after contol the parameter in goodwin model
+
+# Fig 4　  
+fitzmotif1.py ~ fizmotif8.py        : Calculation of CV with analytical formula  
+goodwinmotif1.py ~ goodwinmotif8.py : Numerical calculation of CV with checkpoints
+fitzedge.py                         : code to plot CV based on clock distance in fitzhugh-nagumo model
+goodwinedge.py                      : code to plot CV based on clock distance in goodwin model
+phaseedge.py                        : code to plot CV based on clock distance in phase model
+complex goodwin.py                  : code to calculate CV and plot it based on clock distance
+network complex goodwin.py          : code to generate complex network
+goodwin cascade.py                  : code to calculate CV in longer cascade network (clock: goodwin model)
+
 
 # FigS1　 
-cv\_u\_a.c : Numerical calculation of CV for u with different values a   
-cv\_u\_b.c : Numerical calculation of CV for u with different values b   
-cv\_u\_k.c : Numerical calculation of CV for u with different values k   
-cv\_v\_a.c : Numerical calculation of CV for v with different values a   
-cv\_v\_b.c : Numerical calculation of CV for v with different values b   
-cv\_v\_k.c : Numerical calculation of CV for v with different values k   
-cv\_w\_a.c : Numerical calculation of CV for w with different values a   
-cv\_w\_b.c : Numerical calculation of CV for w with different values b   
-cv\_w\_k.c : Numerical calculation of CV for w with different values k  
+signal goodwin.py       : code to obsereve oscillation and peaks detection.(figure S1A)
+CV goodwin.py           : CV Calculation of goodwin model(figure S1A)
+goodwin(k_1,K_1_120).py : code for calculate CV in fixed k=1, with sweep K=1-120 (figure S1B)
+plottingfigS1.py        : code to plot figure S1B
 
 # FigS2　 
-de.c : Differential evolution of numerical CV  
+fitzhugh-nagumo heatmap.py  : distribution of case optimization after contol the parameter in           fitzhugh-nagumo model based on the perspective of amplitude and sin wave correlation
+goodwin heatmap.py          : distribution of case optimization after contol the parameter in goodwin model based on the perspective of amplitude and sin wave correlation
 
-# FigS3　  
-de.c : Differential evolution of analytical CV  
+# FigS3
+goodwin cascade.py              : code to calculate CV in longer cascade network (clock: goodwin model)
+fitzhugh nagumo cascade.py      : code to calculate CV in longer cascade network (clock: FHN model)
+phase cascade.py                : code to calculate CV in longer cascade network (clock: phase model) 
