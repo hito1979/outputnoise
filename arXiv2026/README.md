@@ -1,14 +1,14 @@
 # Fig 1  
-CV goodwin.py      : CV Calculation with different values of d.  
-signal goodwin.py  : code to obsereve oscillation and peaks detection.  
+- CV_goodwin.py      : CV Calculation with different values of d.  
+- signal_goodwin.py  : code to obsereve oscillation and peaks detection.  
 
 
 # Fig 2　  
-CV fitzhugh-nagumo.py   : CV Calculation of fitzhugh-nagumo model  
-CV goodwin.py           : CV Calculation of goodwin model
-CV phasemodel.py        : CV Calculation of phase model
-fitzhugh-nagumo heatmap.py  : distribution of case optimization after contol the parameter in     fitzhugh-nagumo model
-goodwin heatmap.py          : distribution of case optimization after contol the parameter in goodwin model
+- CV_fitzhugh-nagumo.py   : CV Calculation of fitzhugh-nagumo model  
+- CV_goodwin.py           : CV Calculation of goodwin model
+- CV_phasemodel.py        : CV Calculation of phase model
+- fitzhugh-nagumo_heatmap.py  : distribution of case optimization after contol the parameter in     fitzhugh-nagumo model
+- goodwin_heatmap.py          : distribution of case optimization after contol the parameter in goodwin model
 
 # Fig 3　  
 fitzmotif1.py ~ fizmotif8.py        : Calculation of CV with analytical formula  
